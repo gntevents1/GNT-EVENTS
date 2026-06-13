@@ -49,7 +49,12 @@ export function Footer() {
                 +91 98851 90750
               </a>
             </li>
-            <li className="flex gap-3"><Mail size={16} className="mt-0.5 text-gold shrink-0" /> hello@gntevents.in</li>
+            <li className="flex gap-3">
+              <Mail size={16} className="mt-0.5 text-gold shrink-0" />
+              <a href="mailto:g80events@gmail.com" className="hover:text-gold transition">
+                g80events@gmail.com
+              </a>
+            </li>
           </ul>
         </div>
       </div>

@@ -86,7 +86,7 @@ function Contact() {
             ]}
           />
           <ContactRow icon={Phone} title="Call" href="tel:+919885190750" lines={["+91 98851 90750"]} />
-          <ContactRow icon={Mail} title="Email" lines={["hello@gntevents.in", "plan@gntevents.in"]} />
+          <ContactRow icon={Mail} title="Email" href="mailto:g80events@gmail.com" lines={["g80events@gmail.com"]} />
           <ContactRow icon={Clock} title="Studio Hours" lines={["Open 24 hours", "Available every day"]} />
         </aside>
       </section>
