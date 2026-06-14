@@ -3,14 +3,15 @@ import { type FormEvent } from "react";
 import { SiteLayout, PageHeader } from "@/components/site/Layout";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
-const studioMapsUrl = "https://www.google.com/maps/dir/17.265255,80.172736/G80+Events+%26+Decorators,+SBI+Colony+Vikas+Nagar+road,+beside+Amaravatihi+Rythubazar+jkc+Road,+Andhra+Pradesh+522006/@16.7919945,79.9854626,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3a4a75871cf98573:0x7f4903d05f51b5b5!2m2!1d80.4180357!2d16.3228006?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D";
+const studioMapsUrl = "https://www.google.com/maps/dir/17.265255,80.172736/GNT+Events+%26+Decorators,+SBI+Colony+Vikas+Nagar+road,+beside+Amaravatihi+Rythubazar+jkc+Road,+Andhra+Pradesh+522006/@16.7919945,79.9854626,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3a4a75871cf98573:0x7f4903d05f51b5b5!2m2!1d80.4180357!2d16.3228006?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D";
 const whatsappNumber = "919885190750";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — G80 Events & Decorators" },
-      { name: "description", content: "Plan your wedding or event with G80 Events & Decorators in Guntur. Reach our team by phone, email or the enquiry form." },
+      { title: "Contact — GNT Events & Decorators" },
+      { name: "description", content: "Plan your wedding or event with GNT Events & Decorators in Guntur. Reach our team by phone, email or the enquiry form." },
+
     ],
   }),
   component: Contact,
@@ -30,7 +31,7 @@ function Contact() {
     const message = String(formData.get("message") ?? "").trim();
 
     const lines = [
-      `Hello G80 Events, I am ${name}.`,
+      `Hello GNT Events, I am ${name}.`,
       `Phone: ${phone}`,
       email ? `Email: ${email}` : null,
       type ? `Event Type: ${type}` : null,
@@ -86,7 +87,7 @@ function Contact() {
             ]}
           />
           <ContactRow icon={Phone} title="Call" href="tel:+919885190750" lines={["+91 98851 90750"]} />
-          <ContactRow icon={Mail} title="Email" href="mailto:g80events@gmail.com" lines={["g80events@gmail.com"]} />
+          <ContactRow icon={Mail} title="Email" href="mailto:gntevents@gmail.com" lines={["gntevents@gmail.com"]} />
           <ContactRow icon={Clock} title="Studio Hours" lines={["Open 24 hours", "Available every day"]} />
         </aside>
       </section>

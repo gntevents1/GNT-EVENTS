@@ -10,8 +10,8 @@ import g4 from "@/assets/gallery-4.jpg";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — G80 Events & Decorators" },
-      { name: "description", content: "Weddings, corporate events, private celebrations, decor and full event production by G80 Events & Decorators in Guntur." },
+      { title: "Services — GNT Events & Decorators" },
+      { name: "description", content: "Weddings, corporate events, private celebrations, decor and full event production by GNT Events & Decorators in Guntur." },
     ],
   }),
   component: Services,

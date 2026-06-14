@@ -6,8 +6,9 @@ import g4 from "@/assets/gallery-4.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — G80 Events & Decorators" },
-      { name: "description", content: "The story, philosophy and team behind G80 Events & Decorators, a luxury wedding planner in Guntur." },
+      { title: "About — GNT Events & Decorators" },
+      { name: "description", content: "The story, philosophy and team behind GNT Events & Decorators, a luxury wedding planner in Guntur." },
+
     ],
   }),
   component: About,
@@ -19,12 +20,13 @@ function About() {
       <PageHeader
         eyebrow="Our Story"
         title="A House Built on Celebration"
-        subtitle="Founded in Guntur, G80 Events & Decorators is a design-led wedding and event company crafting heirloom moments across India."
+        subtitle="Founded in Guntur, GNT Events & Decorators is a design-led wedding and event company crafting heirloom moments across India."
       />
 
       <section className="px-6 lg:px-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center pb-28">
         <div className="rounded-3xl overflow-hidden">
-          <img src={g1} alt="G80 Events & Decorators celebration" loading="lazy" className="w-full h-[640px] object-cover" />
+          <img src={g1} alt="GNT Events & Decorators celebration" loading="lazy" className="w-full h-[640px] object-cover" />
+
         </div>
         <div>
           <span className="eyebrow">The Beginning</span>
@@ -32,7 +34,7 @@ function About() {
           <span className="gold-divider mt-8" />
           <div className="mt-8 space-y-5 text-muted-foreground leading-relaxed">
             <p>
-              G80 Events & Decorators began with a quiet belief — that an Indian celebration deserves
+              GNT Events & Decorators began with a quiet belief — that an Indian celebration deserves
               the same reverence as a piece of couture. Every drape pinned by hand, every
               marigold strand counted, every cue rehearsed.
             </p>

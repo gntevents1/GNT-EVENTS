@@ -12,8 +12,9 @@ import g3 from "@/assets/gallery-3.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "G80 Events & Decorators — Luxury Wedding & Event Planners in Guntur" },
-      { name: "description", content: "Royal Indian weddings, corporate galas and bespoke celebrations crafted in Guntur by G80 Events & Decorators." },
+      { title: "GNT Events & Decorators — Luxury Wedding & Event Planners in Guntur" },
+      { name: "description", content: "Royal Indian weddings, corporate galas and bespoke celebrations crafted in Guntur by GNT Events & Decorators." },
+
     ],
   }),
   component: Home,
@@ -39,7 +40,7 @@ function Home() {
           </h1>
           <span className="gold-divider mx-auto mt-10" />
           <p className="text-white/80 max-w-2xl mx-auto mt-8 text-base md:text-lg leading-relaxed">
-            G80 Events & Decorators designs royal weddings and bespoke celebrations across South India —
+            GNT Events & Decorators designs royal weddings and bespoke celebrations across South India —
             curating florals, light, music and moments into stories worth keeping.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mt-10">
@@ -53,13 +54,14 @@ function Home() {
 
       {/* INTRO */}
       <section className="py-28 px-6 lg:px-10 max-w-5xl mx-auto text-center">
-        <span className="eyebrow">House of G80</span>
+        <span className="eyebrow">House of GNT</span>
         <h2 className="font-serif text-4xl md:text-6xl mt-5 leading-tight">
           A quiet obsession with detail,<br />a loud love for celebration.
         </h2>
         <span className="gold-divider mx-auto mt-8" />
         <p className="text-muted-foreground mt-8 text-lg leading-relaxed">
-          Born in Guntur and inspired by the grandeur of regional weddings, G80 Events & Decorators
+          Born in Guntur and inspired by the grandeur of regional weddings, GNT Events & Decorators
+
           blends Sabyasachi-rich aesthetics with modern event craft. From mandap to
           metric, we hold every thread of your celebration with reverence.
         </p>

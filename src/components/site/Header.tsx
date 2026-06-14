@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/gnt-logo.png";
+
 
 const nav = [
   { to: "/", label: "Home" },
@@ -31,15 +33,11 @@ export function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
         <Link to="/" className="flex items-center gap-3 group">
-          <span className="w-10 h-10 rounded-full border border-foreground flex items-center justify-center font-serif text-lg group-hover:bg-foreground group-hover:text-background transition-colors duration-500">
-            G
-          </span>
-          <div className="leading-tight">
-            <div className="font-serif text-xl tracking-wide">G80 Events & Decorators</div>
-            <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
-              Guntur
-            </div>
-          </div>
+          <img
+            src={logo}
+            alt="GNT Events & Decorators"
+            className="h-10 lg:h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-10">
