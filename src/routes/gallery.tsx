@@ -1,13 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/site/Layout";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import sWedding from "@/assets/service-wedding.jpg";
-import sCorporate from "@/assets/service-corporate.jpg";
-import sPrivate from "@/assets/service-private.jpg";
-import hero from "@/assets/hero-wedding.jpg";
+import g1 from "@/assets/gnt-wedding-stage.png";
+import g2 from "@/assets/gnt-traditional-mandap.png";
+import g3 from "@/assets/gnt-kolam-stage.png";
+import g4 from "@/assets/gnt-white-elegance.png";
+import g5 from "@/assets/gnt-sangeet-decor.png";
+import g6 from "@/assets/gnt-marigold-setup.png";
+import g7 from "@/assets/gnt-haldi-ceremony.png";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -20,14 +19,13 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const images = [
-  { src: g1, label: "Royal Mandap · Guntur" },
-  { src: g2, label: "Haldi · Vijayawada" },
-  { src: sWedding, label: "Reception Stage · Hyderabad" },
-  { src: g3, label: "Sangeet Night · Guntur" },
-  { src: hero, label: "Mandap Florals · Tenali" },
-  { src: sCorporate, label: "Corporate Gala · Vizag" },
-  { src: g4, label: "Outdoor Reception · Amaravati" },
-  { src: sPrivate, label: "Birthday Soirée · Guntur" },
+  { src: g1, label: "Premium Stage Design · Guntur" },
+  { src: g2, label: "Traditional Mandap · Andhra Pradesh" },
+  { src: g3, label: "Royal Wedding Setup · Guntur" },
+  { src: g4, label: "Luxury Event Decoration · Guntur" },
+  { src: g5, label: "Sangeet Night · Andhra Pradesh" },
+  { src: g6, label: "Marigold Backdrop · Guntur" },
+  { src: g7, label: "Haldi Ceremony · Guntur" },
 ];
 
 function Gallery() {

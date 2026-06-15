@@ -1,13 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/Layout";
 import { ArrowRight, Sparkles, Heart, Crown, Gem } from "lucide-react";
-import hero from "@/assets/hero-wedding.jpg";
-import sWedding from "@/assets/service-wedding.jpg";
-import sCorporate from "@/assets/service-corporate.jpg";
-import sPrivate from "@/assets/service-private.jpg";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
+import hero from "@/assets/gnt-wedding-stage.png";
+import sWedding from "@/assets/gnt-traditional-mandap.png";
+import sCorporate from "@/assets/gnt-kolam-stage.png";
+import sPrivate from "@/assets/gnt-white-elegance.png";
+import g1 from "@/assets/gnt-haldi-ceremony.png";
+import g2 from "@/assets/gnt-sangeet-decor.png";
+import g3 from "@/assets/gnt-marigold-setup.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -31,7 +31,7 @@ function Home() {
     <SiteLayout>
       {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <img src={hero} alt="Luxury Indian wedding mandap" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={hero} alt="GNT Events luxury wedding stage decoration" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/70" />
         <div className="relative z-10 text-center px-6 max-w-5xl animate-fade-in">
           <span className="eyebrow text-gold">Guntur</span>
@@ -102,7 +102,7 @@ function Home() {
       <section className="py-28 px-6 lg:px-10">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div className="rounded-3xl overflow-hidden">
-            <img src={g1} alt="Royal wedding stage" loading="lazy" className="w-full h-[600px] object-cover" />
+            <img src={g1} alt="GNT Events haldi ceremony setup" loading="lazy" className="w-full h-[600px] object-cover" />
           </div>
           <div>
             <span className="eyebrow">Why GNT</span>
@@ -154,9 +154,13 @@ function Home() {
             <Link to="/gallery" className="btn-outline-luxury self-start md:self-end">View Full Gallery</Link>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            {[g1, g2, g3].map((img, i) => (
+            {[
+              { src: g1, label: "Haldi Ceremony · Guntur" },
+              { src: g2, label: "Sangeet Night · Andhra Pradesh" },
+              { src: g3, label: "Marigold Backdrop · Guntur" },
+            ].map((img, i) => (
               <div key={i} className="rounded-3xl overflow-hidden aspect-[4/5] group">
-                <img src={img} alt={`Celebration ${i + 1}`} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.2s]" />
+                <img src={img.src} alt={img.label} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.2s]" />
               </div>
             ))}
           </div>

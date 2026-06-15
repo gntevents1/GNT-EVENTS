@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/site/Layout";
-import g1 from "@/assets/gallery-1.jpg";
-import g4 from "@/assets/gallery-4.jpg";
+import g1 from "@/assets/gnt-traditional-mandap.png";
+import g4 from "@/assets/gnt-white-elegance.png";
 
 export const Route = createFileRoute("/about")({
   head: () => ({

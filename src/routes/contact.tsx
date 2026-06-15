@@ -91,6 +91,36 @@ function Contact() {
           <ContactRow icon={Clock} title="Studio Hours" lines={["Open 24 hours", "Available every day"]} />
         </aside>
       </section>
+
+      {/* GOOGLE MAPS */}
+      <section className="px-6 lg:px-10 max-w-7xl mx-auto pb-28">
+        <div className="text-center mb-10">
+          <span className="eyebrow">Visit Our Studio</span>
+          <h2 className="font-serif text-3xl md:text-4xl mt-4">GNT Events & Decorators, Guntur</h2>
+          <span className="gold-divider mx-auto mt-6" />
+        </div>
+        <a
+          href="https://www.google.com/maps/place/GNT+Events+%26+Decorators/@16.3228006,80.4180357,17z/"
+          target="_blank"
+          rel="noreferrer"
+          className="block"
+        >
+          <div
+            className="rounded-[20px] overflow-hidden border border-gold/20 shadow-[0_4px_30px_-12px_rgba(11,11,11,0.08)] hover:shadow-[0_20px_50px_-20px_rgba(11,11,11,0.18)] transition-shadow duration-500"
+          >
+            <iframe
+              title="GNT Events & Decorators Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3830.123!2d80.4180357!3d16.3228006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a75871cf98573%3A0x7f4903d05f51b5b5!2sGNT%20Events%20%26%20Decorators!5e0!3m2!1sen!2sin!4v1718435200000"
+              width="100%"
+              className="w-full h-[280px] sm:h-[350px] lg:h-[450px]"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </a>
+      </section>
     </SiteLayout>
   );
 }
