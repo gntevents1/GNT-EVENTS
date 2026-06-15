@@ -1,11 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/site/Layout";
-import sWedding from "@/assets/gnt-traditional-mandap.png";
-import sCorporate from "@/assets/gnt-kolam-stage.png";
-import sPrivate from "@/assets/gnt-white-elegance.png";
-import g2 from "@/assets/gnt-sangeet-decor.png";
-import g3 from "@/assets/gnt-marigold-setup.png";
-import g4 from "@/assets/gnt-haldi-ceremony.png";
+import sWedding from "@/assets/gnt-img-03.png";
+import sCorporate from "@/assets/gnt-img-04.png";
+import sPrivate from "@/assets/gnt-img-05.png";
+import g2 from "@/assets/gnt-img-06.png";
+import g3 from "@/assets/gnt-img-07.png";
+import g4 from "@/assets/gnt-img-08.png";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
