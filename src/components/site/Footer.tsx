@@ -13,7 +13,8 @@ export function Footer() {
           <img
             src={logoWhite}
             alt="GNT Events & Decorators"
-            className="h-16 w-auto object-contain mb-6"
+            style={{ objectFit: "contain", imageRendering: "auto" }}
+            className="h-[84px] w-auto mb-6"
           />
           <span className="gold-divider mb-6" />
           <p className="text-sm text-background/70 max-w-md leading-relaxed">
