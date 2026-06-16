@@ -5,7 +5,7 @@ import hero from "@/assets/gnt-wedding-stage.png";
 import sWedding from "@/assets/gnt-traditional-mandap.png";
 import sCorporate from "@/assets/gnt-img-11.png";
 import sPrivate from "@/assets/gnt-img-12.png";
-import g1 from "@/assets/gnt-img-19.png";
+import g1 from "@/assets/gnt-peacock-stage.png";
 import g2 from "@/assets/gnt-img-13.png";
 import g3 from "@/assets/gnt-img-16.png";
 
