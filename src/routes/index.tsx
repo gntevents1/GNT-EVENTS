@@ -3,11 +3,11 @@ import { SiteLayout } from "@/components/site/Layout";
 import { ArrowRight, Sparkles, Heart, Crown, Gem } from "lucide-react";
 import hero from "@/assets/gnt-wedding-stage.png";
 import sWedding from "@/assets/gnt-traditional-mandap.png";
-import sCorporate from "@/assets/gnt-kolam-stage.png";
-import sPrivate from "@/assets/gnt-white-elegance.png";
-import g1 from "@/assets/gnt-haldi-ceremony.png";
-import g2 from "@/assets/gnt-sangeet-decor.png";
-import g3 from "@/assets/gnt-marigold-setup.png";
+import sCorporate from "@/assets/gnt-img-11.png";
+import sPrivate from "@/assets/gnt-img-12.png";
+import g1 from "@/assets/gnt-img-19.png";
+import g2 from "@/assets/gnt-img-13.png";
+import g3 from "@/assets/gnt-img-16.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({

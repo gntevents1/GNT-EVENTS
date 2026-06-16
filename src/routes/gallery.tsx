@@ -2,15 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHeader } from "@/components/site/Layout";
 import g9 from "@/assets/gnt-img-09.png";
 import g10 from "@/assets/gnt-img-10.png";
-import g11 from "@/assets/gnt-img-11.png";
-import g12 from "@/assets/gnt-img-12.png";
-import g13 from "@/assets/gnt-img-13.png";
 import g14 from "@/assets/gnt-img-14.png";
 import g15 from "@/assets/gnt-img-15.png";
-import g16 from "@/assets/gnt-img-16.png";
 import g17 from "@/assets/gnt-img-17.png";
 import g18 from "@/assets/gnt-img-18.png";
-import g19 from "@/assets/gnt-img-19.png";
 import g20 from "@/assets/gnt-img-20.png";
 import g21 from "@/assets/gnt-img-21.png";
 import g22 from "@/assets/gnt-img-22.png";
@@ -21,6 +16,11 @@ import g26 from "@/assets/gnt-img-26.png";
 import g27 from "@/assets/gnt-img-27.png";
 import g28 from "@/assets/gnt-img-28.png";
 import g29 from "@/assets/gnt-img-29.png";
+import g_old_1 from "@/assets/gnt-haldi-ceremony.png";
+import g_old_2 from "@/assets/gnt-sangeet-decor.png";
+import g_old_3 from "@/assets/gnt-marigold-setup.png";
+import g_old_4 from "@/assets/gnt-kolam-stage.png";
+import g_old_5 from "@/assets/gnt-white-elegance.png";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -33,17 +33,17 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const images = [
+  { src: g_old_1, label: "Haldi Ceremony Setup" },
+  { src: g_old_2, label: "Sangeet Decoration" },
+  { src: g_old_3, label: "Marigold Setup" },
+  { src: g_old_4, label: "Kolam Stage Design" },
+  { src: g_old_5, label: "White Elegance Decor" },
   { src: g9, label: "Royal Wedding Setup · Guntur" },
   { src: g10, label: "Traditional Mandap Design" },
-  { src: g11, label: "Premium Stage Decoration" },
-  { src: g12, label: "Luxury Event Styling" },
-  { src: g13, label: "Floral Wedding Decor" },
   { src: g14, label: "Grand Celebration Setup" },
   { src: g15, label: "Royal Wedding Setup · Guntur" },
-  { src: g16, label: "Traditional Mandap Design" },
   { src: g17, label: "Premium Stage Decoration" },
   { src: g18, label: "Luxury Event Styling" },
-  { src: g19, label: "Floral Wedding Decor" },
   { src: g20, label: "Grand Celebration Setup" },
   { src: g21, label: "Royal Wedding Setup · Guntur" },
   { src: g22, label: "Traditional Mandap Design" },
