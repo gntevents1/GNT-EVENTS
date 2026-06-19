@@ -1,10 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/Layout";
-import { ArrowRight, Sparkles, Heart, Crown, Gem } from "lucide-react";
+import { ArrowRight, Sparkles, Heart, Crown, Gem, Building2 } from "lucide-react";
 import hero from "@/assets/gnt-wedding-stage.png";
 import sWedding from "@/assets/gnt-traditional-mandap.png";
 import sCorporate from "@/assets/gnt-img-11.png";
 import sPrivate from "@/assets/gnt-img-12.png";
+import sAluminium from "@/assets/gnt-aluminium-stall-02.jpg";
 import g1 from "@/assets/gnt-peacock-stage.png";
 import g2 from "@/assets/gnt-img-13.png";
 import g3 from "@/assets/gnt-img-16.png";
@@ -24,6 +25,7 @@ const services = [
   { icon: Heart, title: "Weddings & Receptions", image: sWedding, desc: "Creating timeless wedding experiences with elegant mandap designs, floral arrangements, traditional decor, and complete celebration styling." },
   { icon: Crown, title: "Traditional Ceremonies", image: sCorporate, desc: "Beautifully crafted setups for Haldi, engagements, poojas, and family celebrations with cultural detailing and premium execution." },
   { icon: Gem, title: "Custom Event Decor", image: sPrivate, desc: "Personalized themes, stage concepts, lighting arrangements, and floral styling designed uniquely for every occasion." },
+  { icon: Building2, title: "White Aluminium Exhibition Stalls", image: sAluminium, desc: "Premium white aluminium exhibition stalls designed for business events, expos, trade shows, and professional displays with clean finishing and elegant execution." },
 ];
 
 function Home() {
@@ -78,11 +80,11 @@ function Home() {
             <h2 className="font-serif text-4xl md:text-6xl mt-4">Signature Services</h2>
             <span className="gold-divider mx-auto mt-8" />
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((s) => (
               <article key={s.title} className="luxury-card overflow-hidden group">
                 <div className="aspect-[4/5] overflow-hidden">
-                  <img src={s.image} alt={s.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.2s]" />
+                  <img src={s.image} alt={s.title} loading="lazy" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-[1.2s]" />
                 </div>
                 <div className="p-8">
                   <s.icon size={22} className="text-gold mb-4" />

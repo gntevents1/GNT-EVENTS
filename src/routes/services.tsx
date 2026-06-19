@@ -6,12 +6,13 @@ import sPrivate from "@/assets/gnt-img-05.png";
 import g2 from "@/assets/gnt-img-06.png";
 import g3 from "@/assets/gnt-img-07.png";
 import g4 from "@/assets/gnt-img-08.png";
+import sAluminium from "@/assets/gnt-aluminium-stall-03.jpg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       { title: "Services — GNT Events & Decorators" },
-      { name: "description", content: "Weddings, corporate events, private celebrations, decor and full event production by GNT Events & Decorators in Guntur." },
+      { name: "description", content: "Weddings, corporate events, private celebrations, exhibition stalls, decor and full event production by GNT Events & Decorators in Guntur." },
     ],
   }),
   component: Services,
@@ -21,6 +22,7 @@ const services = [
   { img: sWedding, eyebrow: "Signature", title: "Weddings & Receptions", desc: "Creating timeless wedding experiences with elegant mandap designs, floral arrangements, traditional decor, and complete celebration styling." },
   { img: g2, eyebrow: "Cultural", title: "Traditional Ceremonies", desc: "Beautifully crafted setups for Haldi, engagements, poojas, and family celebrations with cultural detailing and premium execution." },
   { img: g3, eyebrow: "Bespoke", title: "Custom Event Decor", desc: "Personalized themes, stage concepts, lighting arrangements, and floral styling designed uniquely for every occasion." },
+  { img: sAluminium, eyebrow: "Exhibition", title: "White Aluminium Exhibition Stalls", desc: "Modern aluminium stall solutions crafted for exhibitions, brand showcases, and commercial events with premium quality and professional presentation." },
 ];
 
 function Services() {
@@ -36,7 +38,7 @@ function Services() {
         {services.map((s, i) => (
           <article key={s.title} className={`grid lg:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? "lg:[&>div:first-child]:order-2" : ""}`}>
             <div className="rounded-3xl overflow-hidden">
-              <img src={s.img} alt={s.title} loading="lazy" className="w-full h-[520px] object-cover hover:scale-105 transition-transform duration-[1.2s]" />
+              <img src={s.img} alt={s.title} loading="lazy" className="w-full h-[520px] object-cover object-center hover:scale-105 transition-transform duration-[1.2s]" />
             </div>
             <div>
               <span className="eyebrow">{s.eyebrow}</span>
