@@ -9,6 +9,8 @@ import sAluminium from "@/assets/gnt-aluminium-stall-02.jpg";
 import g1 from "@/assets/gnt-peacock-stage.png";
 import g2 from "@/assets/gnt-img-13.png";
 import g3 from "@/assets/gnt-img-16.png";
+import directorDhanraj from "@/assets/gnt-director-dhanraj.jpg";
+import directorNagaraju from "@/assets/gnt-director-nagaraju.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -176,6 +178,39 @@ function Home() {
         <p className="mt-6 text-sm tracking-[0.22em] uppercase text-muted-foreground">
           Sahithi & Karthik · Guntur, 2025
         </p>
+      </section>
+
+      {/* DIRECTORS */}
+      <section className="py-28 px-6 lg:px-10">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <span className="eyebrow">The Visionaries</span>
+            <h2 className="font-serif text-4xl md:text-6xl mt-4">Directors of GNT Events & Decorators</h2>
+            <span className="gold-divider mx-auto mt-8" />
+            <p className="text-muted-foreground mt-6 text-lg leading-relaxed max-w-2xl mx-auto">
+              Guiding every celebration with experience, creativity, and dedication.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-10 max-w-3xl mx-auto">
+            {[
+              { name: "Dhanraj Gottupalli", role: "Director, GNT Events & Decorators", img: directorDhanraj },
+              { name: "Nagaraju Kajjam", role: "Director, GNT Events & Decorators", img: directorNagaraju },
+            ].map((d) => (
+              <article key={d.name} className="luxury-card overflow-hidden group text-center">
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img src={d.img} alt={d.name} loading="lazy" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-[1.2s]" />
+                </div>
+                <div className="p-8">
+                  <h3 className="font-serif text-2xl md:text-3xl">{d.name}</h3>
+                  <p className="mt-2 text-xs tracking-[0.22em] uppercase text-gold font-medium">{d.role}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+          <p className="text-center text-muted-foreground mt-14 text-base leading-relaxed max-w-3xl mx-auto">
+            With years of expertise in wedding decorations, traditional ceremonies, exhibitions, and premium event styling, our directors personally ensure every celebration is crafted with perfection.
+          </p>
+        </div>
       </section>
 
       {/* CTA */}
