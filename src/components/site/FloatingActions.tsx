@@ -4,7 +4,7 @@ export function FloatingActions() {
   return (
     <div className="fixed right-4 md:right-6 bottom-6 md:bottom-10 flex flex-col gap-4 z-50">
       <a
-        href="https://www.google.com/maps/place/GNT+Events+%26+Decorators/@16.3228006,80.4180357,17z/"
+        href="https://www.google.com/maps/dir/17.265255,80.172736/GNT+Events+%26+Decorators,+SBI+Colony+Vikas+Nagar+road,+beside+Amaravatihi+Rythubazar+jkc+Road,+Andhra+Pradesh+522006/@16.7919945,79.9854626,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3a4a75871cf98573:0x7f4903d05f51b5b5!2m2!1d80.4180357!2d16.3228006?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D"
         target="_blank"
         rel="noreferrer"
         className="w-12 h-12 md:w-[55px] md:h-[55px] rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110 shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.2)]"
